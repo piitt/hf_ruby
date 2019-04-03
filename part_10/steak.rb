@@ -4,7 +4,7 @@
 class Steak
   include Comparable
   attr_accessor :grade
-  GRADE_SCORES = {'Prime' => 3, 'Choice' => 2, 'Select' => 1}\
+  GRADE_SCORES = {'Prime' => 3, 'Choice' => 2, 'Select' => 1}
 
   def <=>(other)
     if GRADE_SCORES[self.grade] < GRADE_SCORES[other.grade]
